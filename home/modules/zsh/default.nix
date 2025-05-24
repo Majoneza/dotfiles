@@ -3,7 +3,7 @@
     programs.zsh = {
         enable = true;
         enableCompletion = true;
-        initExtra = "PS1='%~$ '";
+        initContent = "PS1='%~$ '";
         history = {
             size = 10000;
         };

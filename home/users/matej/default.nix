@@ -41,7 +41,7 @@ in
         nixfmt-rfc-style
 
         # Fonts
-        nerdfonts
+        nerd-fonts.roboto-mono
 
         # Math
         sage
