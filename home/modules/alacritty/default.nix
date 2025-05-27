@@ -7,7 +7,10 @@
                 TERM = "xterm-256color";
             };
             window.dynamic_title = true;
-            font.size = 12;
+            font = {
+                normal.family = "RobotoMono Nerd Font Mono";
+                size = 12;
+            };
             selection.save_to_clipboard = true;
             keyboard.bindings = [
                 { key = "N"; mods = "Control|Shift"; action = "CreateNewWindow"; }

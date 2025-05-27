@@ -2,10 +2,16 @@
 let
     modules = myLib.path.appendForEach homeModules [
         "alacritty"
+        "aria2"
         "flatpak"
         "git"
+        "htop"
         "nvim"
+        "ripgrep"
         "zsh"
+        "zsh/fzf"
+        "zsh/pls"
+        "zsh/zoxide"
     ];
 in
 {
@@ -19,9 +25,6 @@ in
         zip
         xz
         unzip
-
-        # Monitoring
-        htop
 
         # Manual
         tldr

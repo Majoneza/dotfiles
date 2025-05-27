@@ -3,7 +3,6 @@
     programs.zsh = {
         enable = true;
         enableCompletion = true;
-        initContent = "PS1='%~$ '";
         history = {
             size = 10000;
         };
@@ -35,16 +34,16 @@
                     sha256 = "GFHlZjIHUWwyeVoCpszgn4AmLPSSE8UVNfRmisnhkpg=";
                 };
             }
-            #{
-            #    name = "powerlevel10k";
-            #    file = "powerlevel10k.zsh-theme";
-            #    src = pkgs.fetchFromGitHub {
-            #        owner = "romkatv";
-            #        repo = "powerlevel10k";
-            #        rev = "v1.20.0";
-            #        sha256 = "ES5vJXHjAKw/VHjWs8Au/3R+/aotSbY7PWnWAMzCR8E=";
-            #    };
-            #}
+            {
+                name = "powerlevel10k";
+                file = "powerlevel10k.zsh-theme";
+                src = pkgs.fetchFromGitHub {
+                    owner = "romkatv";
+                    repo = "powerlevel10k";
+                    rev = "v1.20.0";
+                    sha256 = "ES5vJXHjAKw/VHjWs8Au/3R+/aotSbY7PWnWAMzCR8E=";
+                };
+            }
             {
                 name = "nix-zsh-completions";
                 src = pkgs.fetchFromGitHub {
@@ -55,10 +54,5 @@
                 };
             }
         ];
-    };
-
-    programs.fzf = {
-        enable = true;
-        enableZshIntegration = true;
     };
 }

@@ -24,6 +24,7 @@ in
         modules
     ];
 
+    # Open firewall ports
     networking = {
         firewall = {
             # Expose the most commonly used port
@@ -32,6 +33,13 @@ in
                 8989
             ];
         };
+    };
+
+    # Enable nvidia PRIME
+    hardware.nvidia.prime = {
+        sync.enable = true;
+        intelBusId = "PCI:0:2:0";
+        nvidiaBusId = "PCI:1:0:0";
     };
 
     # Set your time zone.
@@ -84,6 +92,7 @@ in
                 "dialout" # Serial device access
             ];
         };
+        motd = "Welcome user";
     };
 
     environment.systemPackages = with pkgs; [
@@ -92,6 +101,7 @@ in
         gcc
         gdb
         socat
+        git
         #edk2-uefi-shell
     ];
 }
