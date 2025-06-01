@@ -9,8 +9,10 @@ let
         "nvim"
         "ripgrep"
         "zsh"
+        "zsh/direnv"
         "zsh/fzf"
         "zsh/pls"
+        "zsh/powerlevel10k"
         "zsh/zoxide"
     ];
 in
@@ -39,12 +41,6 @@ in
 
         # Language servers
         nil
-
-        # Language formatters
-        nixfmt-rfc-style
-
-        # Fonts
-        nerd-fonts.roboto-mono
 
         # Math
         sage

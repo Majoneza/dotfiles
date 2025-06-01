@@ -102,6 +102,7 @@ in
         gdb
         socat
         git
-        #edk2-uefi-shell
+        nerd-fonts.roboto-mono
+        nerd-fonts.jetbrains-mono
     ];
 }

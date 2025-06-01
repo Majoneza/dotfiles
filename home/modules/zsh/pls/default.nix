@@ -2,6 +2,6 @@
 {
     programs.pls = {
         enable = true;
-        enableZshIntegration = true;
+        enableZshIntegration = false;
     };
 }

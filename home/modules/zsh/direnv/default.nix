@@ -1,9 +1,8 @@
 { ... }:
 {
-    programs.zoxide = {
+    programs.direnv = {
         enable = true;
         enableZshIntegration = true;
-        options = [
-        ];
+        nix-direnv.enable = true;
     };
 }
